@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Website!</title>
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-700">
+  <header class="absolute inset-x-0 top-0 z-50">
+    <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <div class="flex lg:flex-1">
+        <a href="../index.html" class="-m-1.5 p-1.5">
+          <span class="sr-only">Milos Ristovic Home</span>
+          <img class="h-auto w-12" src="../images/Portfolio logo.png" alt="">
+        </a>
+      </div>
+      <div class="flex lg:hidden">
+        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200" onclick="handleShow()" id="mobileMenuOpenButton">
+          <span class="sr-only">Open main menu</span>
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12 font-mono" >
+        <a href="../index.html" class="text-sm/6 font-semibold text-gray-100">Home</a>
+        <a href="../index.html#about-section" class="text-sm/6 font-semibold text-gray-100">About</a>
+        <a href="../resume.html" class="text-sm/6 font-semibold text-gray-100">Resume</a>
+        <a href="../portfolio.html" class="text-sm/6 font-semibold text-gray-100">Portfolio</a>
+      </div>
+    </nav>
+      <!-- Background backdrop, show/hide based on slide-over state. -->
+      <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 hidden" id="mobileMenu">
+        <div class="flex items-center justify-between">
+          <a href="../index.html" class="-m-1.5 p-1.5">
+            <span class="sr-only">Milos Ristovic Home</span>
+            <img class="h-auto w-12" src="../images/Portfolio logo.png" alt="">
+          </a>
+          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" onclick="handleHide()" id="mobileMenuCloseButton">
+            <span class="sr-only">Close menu</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="mt-6 flow-root">
+          <div class="-my-6 divide-y divide-gray-500/10">
+            <div class="space-y-2 py-6 font-mono">
+              <a href="../index.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Home</a>
+              <a href="../index.html#about-section" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">About</a>
+              <a href="../resume.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Resume</a>
+              <a href="../portfolio.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Portolio</a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </header>
+      <div class="ml-8 mt-48 mb-16">
+        <h1 class="text-5xl font-semibold tracking-tight text-gray-100 sm:text-7xl mt-10 courier-prime-bold">This Website!</h1>
+        <h2 class="mt-8 mb-8 text-pretty text-4xl font-medium text-gray-200 sm:text-2xl/8 courier-prime-bold"><span class="bg-green-600">Fundamentals of HTML / CSS</span></h2>
+        <p class="font-mono text-gray-100 mt-6">This website was developed using HTML, Tailwind CSS, and JavaScript. This website highlights fundamental frontend web development skills including:</p>
+        <ul class="font-mono text-gray-100 list-disc p-6">
+            <li>Responsive Design</li>
+            <li>SEO Best Practices</li>
+            <li>Accessibility Best Practices</li>
+            <li>Basic Functionality with JavaScript</li>
+        </ul>
+    </div>
+    <footer class="w-auto h-48 bg-gray-800 flex justify-between align-middle">
+      <div>
+        <ul class="mt-8 text-gray-100 text-sm font-mono ml-8">
+          <a href="../index.html"><li>Home</li></a>
+          <a href="../index.html#about-section"><li>About & Contact</li></a>
+          <a href="../portfolio.html"><li>Portfolio</li></a>
+          <ul class="ml-8">
+            <a href="portfolio-website.html"><li>This Website</li></a>
+            <a href="victoria-chess-coaching.html"><li>Victoria Chess Coaching</li></a>
+            <a href="deevaandfood.html"><li>Deeva and Food</li></a>
+          </ul>
+          <a href="../resume.html"><li>Resume</li></a>
+        </ul>
+      </div>
+      <div>
+        <p class="mt-8 text-gray-100 text-sm font-mono mr-8">© Milos Ristovic</p>
+      </div>
+    </footer>
+</body>
+<script src="../index.js"></script>
+</html>
